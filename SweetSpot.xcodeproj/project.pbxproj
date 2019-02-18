@@ -13,7 +13,6 @@
 		E0F74E89221B676E00707338 /* SweetSpot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0F74E87221B676E00707338 /* SweetSpot.xcdatamodeld */; };
 		E0F74E8B221B677000707338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0F74E8A221B677000707338 /* Assets.xcassets */; };
 		E0F74E8E221B677000707338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F74E8C221B677000707338 /* LaunchScreen.storyboard */; };
-		E0F74E99221B677100707338 /* SweetSpotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74E98221B677100707338 /* SweetSpotTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +35,6 @@
 		E0F74E8D221B677000707338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0F74E8F221B677000707338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0F74E94221B677000707338 /* SweetSpotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetSpotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0F74E98221B677100707338 /* SweetSpotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetSpotTests.swift; sourceTree = "<group>"; };
 		E0F74E9A221B677100707338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,13 +77,9 @@
 		E0F74E7F221B676E00707338 /* SweetSpot */ = {
 			isa = PBXGroup;
 			children = (
-				E0F74E80221B676E00707338 /* AppDelegate.swift */,
-				E0F74E82221B676E00707338 /* ViewController.swift */,
-				E0F74E84221B676E00707338 /* Main.storyboard */,
-				E0F74E8A221B677000707338 /* Assets.xcassets */,
-				E0F74E8C221B677000707338 /* LaunchScreen.storyboard */,
-				E0F74E8F221B677000707338 /* Info.plist */,
-				E0F74E87221B676E00707338 /* SweetSpot.xcdatamodeld */,
+				E0F74EA5221B67B200707338 /* Sources */,
+				E0F74EA4221B67A900707338 /* Resources */,
+				E0F74EA3221B679200707338 /* Data */,
 			);
 			path = SweetSpot;
 			sourceTree = "<group>";
@@ -93,10 +87,45 @@
 		E0F74E97221B677100707338 /* SweetSpotTests */ = {
 			isa = PBXGroup;
 			children = (
-				E0F74E98221B677100707338 /* SweetSpotTests.swift */,
-				E0F74E9A221B677100707338 /* Info.plist */,
+				E0F74EA6221B67E400707338 /* Resources */,
 			);
 			path = SweetSpotTests;
+			sourceTree = "<group>";
+		};
+		E0F74EA3221B679200707338 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E0F74E87221B676E00707338 /* SweetSpot.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E0F74EA4221B67A900707338 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E0F74E8F221B677000707338 /* Info.plist */,
+				E0F74E8A221B677000707338 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E0F74EA5221B67B200707338 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E0F74E84221B676E00707338 /* Main.storyboard */,
+				E0F74E8C221B677000707338 /* LaunchScreen.storyboard */,
+				E0F74E82221B676E00707338 /* ViewController.swift */,
+				E0F74E80221B676E00707338 /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E0F74EA6221B67E400707338 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E0F74E9A221B677100707338 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0F74E99221B677100707338 /* SweetSpotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +394,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X2YU7S2XU;
-				INFOPLIST_FILE = SweetSpot/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SweetSpot/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -384,7 +412,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X2YU7S2XU;
-				INFOPLIST_FILE = SweetSpot/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SweetSpot/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
