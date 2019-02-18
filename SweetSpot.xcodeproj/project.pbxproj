@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A5047130BCE573669865C2E /* Pods_SweetSpotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9EAE17EC1B278399CB108FA /* Pods_SweetSpotTests.framework */; };
+		D7CD21490C4C03C468F17A29 /* Pods_SweetSpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67AE4142E20E561768B59CE /* Pods_SweetSpot.framework */; };
 		E0F74E81221B676E00707338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74E80221B676E00707338 /* AppDelegate.swift */; };
 		E0F74E83221B676E00707338 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74E82221B676E00707338 /* ViewController.swift */; };
 		E0F74E86221B676E00707338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F74E84221B676E00707338 /* Main.storyboard */; };
 		E0F74E89221B676E00707338 /* SweetSpot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0F74E87221B676E00707338 /* SweetSpot.xcdatamodeld */; };
 		E0F74E8B221B677000707338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0F74E8A221B677000707338 /* Assets.xcassets */; };
 		E0F74E8E221B677000707338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F74E8C221B677000707338 /* LaunchScreen.storyboard */; };
+		E0F74EA9221B722000707338 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F74EA8221B722000707338 /* MapViewController.storyboard */; };
+		E0F74EAB221B724700707338 /* MapViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74EAA221B724700707338 /* MapViewCoordinator.swift */; };
+		E0F74EAE221B74A600707338 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74EAD221B74A600707338 /* Coordinator.swift */; };
+		E0F74EB2221B74F500707338 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74EB1221B74F500707338 /* Presentable.swift */; };
+		E0F74EB4221B75D700707338 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74EB3221B75D700707338 /* Presenter.swift */; };
+		E0F74EB6221B761700707338 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74EB5221B761700707338 /* Router.swift */; };
+		E0F74EB9221B771D00707338 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74EB8221B771D00707338 /* Storyboardable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		241B982FF8B31ABF5DC9A587 /* Pods-SweetSpotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetSpotTests.release.xcconfig"; path = "Target Support Files/Pods-SweetSpotTests/Pods-SweetSpotTests.release.xcconfig"; sourceTree = "<group>"; };
+		5397CAD1105F18A1F3ED0DA6 /* Pods-SweetSpotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetSpotTests.debug.xcconfig"; path = "Target Support Files/Pods-SweetSpotTests/Pods-SweetSpotTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6594D32E4A8BD2EE909B2A79 /* Pods-SweetSpot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetSpot.release.xcconfig"; path = "Target Support Files/Pods-SweetSpot/Pods-SweetSpot.release.xcconfig"; sourceTree = "<group>"; };
+		9EC11EA88B1EE4AAC912F748 /* Pods-SweetSpot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetSpot.debug.xcconfig"; path = "Target Support Files/Pods-SweetSpot/Pods-SweetSpot.debug.xcconfig"; sourceTree = "<group>"; };
+		B67AE4142E20E561768B59CE /* Pods_SweetSpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetSpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F74E7D221B676E00707338 /* SweetSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F74E80221B676E00707338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F74E82221B676E00707338 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +50,14 @@
 		E0F74E8F221B677000707338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0F74E94221B677000707338 /* SweetSpotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetSpotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F74E9A221B677100707338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0F74EA8221B722000707338 /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
+		E0F74EAA221B724700707338 /* MapViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewCoordinator.swift; sourceTree = "<group>"; };
+		E0F74EAD221B74A600707338 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E0F74EB1221B74F500707338 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		E0F74EB3221B75D700707338 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Presenter.swift; path = /Users/coreydavis/Desktop/WorkSpace/SweetSpot/SweetSpot/Sources/Base/UIService/Presenter.swift; sourceTree = "<absolute>"; };
+		E0F74EB5221B761700707338 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E0F74EB8221B771D00707338 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		E9EAE17EC1B278399CB108FA /* Pods_SweetSpotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetSpotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7CD21490C4C03C468F17A29 /* Pods_SweetSpot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +73,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A5047130BCE573669865C2E /* Pods_SweetSpotTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A82E4BB3BC757D37DE6BC67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EC11EA88B1EE4AAC912F748 /* Pods-SweetSpot.debug.xcconfig */,
+				6594D32E4A8BD2EE909B2A79 /* Pods-SweetSpot.release.xcconfig */,
+				5397CAD1105F18A1F3ED0DA6 /* Pods-SweetSpotTests.debug.xcconfig */,
+				241B982FF8B31ABF5DC9A587 /* Pods-SweetSpotTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B243D3CA576DC813A50AEDD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B67AE4142E20E561768B59CE /* Pods_SweetSpot.framework */,
+				E9EAE17EC1B278399CB108FA /* Pods_SweetSpotTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E0F74E74221B676E00707338 = {
 			isa = PBXGroup;
 			children = (
 				E0F74E7F221B676E00707338 /* SweetSpot */,
 				E0F74E97221B677100707338 /* SweetSpotTests */,
 				E0F74E7E221B676E00707338 /* Products */,
+				3A82E4BB3BC757D37DE6BC67 /* Pods */,
+				B243D3CA576DC813A50AEDD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +158,8 @@
 		E0F74EA5221B67B200707338 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E0F74EAC221B725200707338 /* Base */,
+				E0F74EA7221B71AB00707338 /* MapView */,
 				E0F74E84221B676E00707338 /* Main.storyboard */,
 				E0F74E8C221B677000707338 /* LaunchScreen.storyboard */,
 				E0F74E82221B676E00707338 /* ViewController.swift */,
@@ -128,6 +176,51 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		E0F74EA7221B71AB00707338 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				E0F74EA8221B722000707338 /* MapViewController.storyboard */,
+				E0F74EAA221B724700707338 /* MapViewCoordinator.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		E0F74EAC221B725200707338 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E0F74EB7221B770A00707338 /* Storyboardable */,
+				E0F74EB0221B74E200707338 /* UIService */,
+				E0F74EAF221B74D300707338 /* Coordinator */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E0F74EAF221B74D300707338 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E0F74EAD221B74A600707338 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E0F74EB0221B74E200707338 /* UIService */ = {
+			isa = PBXGroup;
+			children = (
+				E0F74EB1221B74F500707338 /* Presentable.swift */,
+				E0F74EB3221B75D700707338 /* Presenter.swift */,
+				E0F74EB5221B761700707338 /* Router.swift */,
+			);
+			path = UIService;
+			sourceTree = "<group>";
+		};
+		E0F74EB7221B770A00707338 /* Storyboardable */ = {
+			isa = PBXGroup;
+			children = (
+				E0F74EB8221B771D00707338 /* Storyboardable.swift */,
+			);
+			path = Storyboardable;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +228,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0F74E9D221B677100707338 /* Build configuration list for PBXNativeTarget "SweetSpot" */;
 			buildPhases = (
+				4FE843BEF979088FD386D858 /* [CP] Check Pods Manifest.lock */,
 				E0F74E79221B676E00707338 /* Sources */,
 				E0F74E7A221B676E00707338 /* Frameworks */,
 				E0F74E7B221B676E00707338 /* Resources */,
@@ -152,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0F74EA0221B677100707338 /* Build configuration list for PBXNativeTarget "SweetSpotTests" */;
 			buildPhases = (
+				1ED27A8B27529C9A4B36B261 /* [CP] Check Pods Manifest.lock */,
 				E0F74E90221B677000707338 /* Sources */,
 				E0F74E91221B677000707338 /* Frameworks */,
 				E0F74E92221B677000707338 /* Resources */,
+				C58ABC5E81C59DA600CCA465 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,6 +307,7 @@
 			files = (
 				E0F74E8E221B677000707338 /* LaunchScreen.storyboard in Resources */,
 				E0F74E8B221B677000707338 /* Assets.xcassets in Resources */,
+				E0F74EA9221B722000707338 /* MapViewController.storyboard in Resources */,
 				E0F74E86221B676E00707338 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,14 +321,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1ED27A8B27529C9A4B36B261 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SweetSpotTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FE843BEF979088FD386D858 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SweetSpot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C58ABC5E81C59DA600CCA465 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SweetSpotTests/Pods-SweetSpotTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SweetSpotTests/Pods-SweetSpotTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E0F74E79221B676E00707338 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0F74EB6221B761700707338 /* Router.swift in Sources */,
+				E0F74EAB221B724700707338 /* MapViewCoordinator.swift in Sources */,
+				E0F74EB4221B75D700707338 /* Presenter.swift in Sources */,
 				E0F74E83221B676E00707338 /* ViewController.swift in Sources */,
+				E0F74EAE221B74A600707338 /* Coordinator.swift in Sources */,
 				E0F74E81221B676E00707338 /* AppDelegate.swift in Sources */,
 				E0F74E89221B676E00707338 /* SweetSpot.xcdatamodeld in Sources */,
+				E0F74EB9221B771D00707338 /* Storyboardable.swift in Sources */,
+				E0F74EB2221B74F500707338 /* Presentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +564,7 @@
 		};
 		E0F74E9E221B677100707338 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EC11EA88B1EE4AAC912F748 /* Pods-SweetSpot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -408,6 +583,7 @@
 		};
 		E0F74E9F221B677100707338 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6594D32E4A8BD2EE909B2A79 /* Pods-SweetSpot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -426,6 +602,7 @@
 		};
 		E0F74EA1221B677100707338 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5397CAD1105F18A1F3ED0DA6 /* Pods-SweetSpotTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -447,6 +624,7 @@
 		};
 		E0F74EA2221B677100707338 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241B982FF8B31ABF5DC9A587 /* Pods-SweetSpotTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
