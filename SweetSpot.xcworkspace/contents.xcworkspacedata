@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/coreydavis/Desktop/WorkSpace/SweetSpot/SweetSpot/Sources/Base/UIService/Presenter.swift">
-   </FileRef>
-   <FileRef
       location = "group:SweetSpot.xcodeproj">
    </FileRef>
    <FileRef
