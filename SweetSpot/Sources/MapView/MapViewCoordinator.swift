@@ -11,6 +11,7 @@ import Foundation
 protocol MapViewCoordinator: Coordinator {
     var didTapAddButton: (() -> Void)? { get set }
     var didTapProfileButton: (() -> Void)? { get set }
+    var didFinish: (() -> Void)? { get set }
     func start()
 }
 
@@ -23,6 +24,7 @@ class MapViewCoordinatorImplementation: MapViewCoordinator {
     
     var didTapAddButton: (() -> Void)?
     var didTapProfileButton: (() -> Void)?
+    var didFinish: (() -> Void)?
     
     // MARK: - Initialization
     
@@ -34,7 +36,7 @@ class MapViewCoordinatorImplementation: MapViewCoordinator {
     // MARK: - Public
 
     func start() {
-        let presentable = presentableFactory.makeMapViewPresentable()
-        router.present(presentable, animated: true, completion: nil)
+        let mapViewPresentable = presentableFactory.makeMapViewPresentable()
+        router.setRootPresentable(mapViewPresentable)
     }
 }

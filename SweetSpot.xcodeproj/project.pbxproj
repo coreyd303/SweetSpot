@@ -11,15 +11,18 @@
 		D7CD21490C4C03C468F17A29 /* Pods_SweetSpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67AE4142E20E561768B59CE /* Pods_SweetSpot.framework */; };
 		E053264C221CAC070083E38D /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053264B221CAC070083E38D /* Presentable.swift */; };
 		E053264E221CAC270083E38D /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053264D221CAC270083E38D /* Presenter.swift */; };
-		E0532650221CAC5B0083E38D /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053264F221CAC5B0083E38D /* RootViewController.swift */; };
-		E0532654221CB06B0083E38D /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0532653221CB06B0083E38D /* RootCoordinator.swift */; };
-		E0532656221CB1740083E38D /* RootPresentableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0532655221CB1740083E38D /* RootPresentableFactory.swift */; };
+		E0532654221CB06B0083E38D /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0532653221CB06B0083E38D /* ApplicationCoordinator.swift */; };
 		E053265B221CBEB20083E38D /* PersistanceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053265A221CBEB10083E38D /* PersistanceContainer.swift */; };
-		E053265D221CC0050083E38D /* RootPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053265C221CC0050083E38D /* RootPresentable.swift */; };
+		E053265D221CC0050083E38D /* ApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053265C221CC0050083E38D /* ApplicationState.swift */; };
 		E0532660221CC0DC0083E38D /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053265F221CC0DC0083E38D /* UserSession.swift */; };
 		E0532662221CC1780083E38D /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0532661221CC1780083E38D /* UserProfile.swift */; };
 		E0532664221CC1B40083E38D /* RemoteUserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0532663221CC1B40083E38D /* RemoteUserSession.swift */; };
 		E0532666221CC2390083E38D /* UserSessionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0532665221CC2390083E38D /* UserSessionDataStore.swift */; };
+		E0532669221DE7730083E38D /* BasePresentableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0532668221DE7730083E38D /* BasePresentableFactory.swift */; };
+		E053266C221DE7F40083E38D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053266B221DE7F40083E38D /* Router.swift */; };
+		E053266E221DE9BF0083E38D /* WindowProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053266D221DE9BF0083E38D /* WindowProviding.swift */; };
+		E0532670221DED150083E38D /* ApplicationChildCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053266F221DED150083E38D /* ApplicationChildCoordinatorFactory.swift */; };
+		E0532672221E0DCB0083E38D /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0532671221E0DCB0083E38D /* BaseCoordinator.swift */; };
 		E070B5B0221C964200AD3623 /* MapViewPresentableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070B5AF221C964200AD3623 /* MapViewPresentableFactory.swift */; };
 		E070B5B2221C97DB00AD3623 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070B5B1221C97DB00AD3623 /* MapViewController.swift */; };
 		E0F74E81221B676E00707338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74E80221B676E00707338 /* AppDelegate.swift */; };
@@ -29,7 +32,6 @@
 		E0F74EA9221B722000707338 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F74EA8221B722000707338 /* MapViewController.storyboard */; };
 		E0F74EAB221B724700707338 /* MapViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74EAA221B724700707338 /* MapViewCoordinator.swift */; };
 		E0F74EAE221B74A600707338 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74EAD221B74A600707338 /* Coordinator.swift */; };
-		E0F74EB6221B761700707338 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74EB5221B761700707338 /* Router.swift */; };
 		E0F74EB9221B771D00707338 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74EB8221B771D00707338 /* Storyboardable.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,15 +53,18 @@
 		B67AE4142E20E561768B59CE /* Pods_SweetSpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetSpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E053264B221CAC070083E38D /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		E053264D221CAC270083E38D /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		E053264F221CAC5B0083E38D /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		E0532653221CB06B0083E38D /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
-		E0532655221CB1740083E38D /* RootPresentableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresentableFactory.swift; sourceTree = "<group>"; };
+		E0532653221CB06B0083E38D /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		E053265A221CBEB10083E38D /* PersistanceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceContainer.swift; sourceTree = "<group>"; };
-		E053265C221CC0050083E38D /* RootPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresentable.swift; sourceTree = "<group>"; };
+		E053265C221CC0050083E38D /* ApplicationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationState.swift; sourceTree = "<group>"; };
 		E053265F221CC0DC0083E38D /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 		E0532661221CC1780083E38D /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		E0532663221CC1B40083E38D /* RemoteUserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUserSession.swift; sourceTree = "<group>"; };
 		E0532665221CC2390083E38D /* UserSessionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionDataStore.swift; sourceTree = "<group>"; };
+		E0532668221DE7730083E38D /* BasePresentableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresentableFactory.swift; sourceTree = "<group>"; };
+		E053266B221DE7F40083E38D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E053266D221DE9BF0083E38D /* WindowProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowProviding.swift; sourceTree = "<group>"; };
+		E053266F221DED150083E38D /* ApplicationChildCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationChildCoordinatorFactory.swift; sourceTree = "<group>"; };
+		E0532671221E0DCB0083E38D /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		E070B5AF221C964200AD3623 /* MapViewPresentableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewPresentableFactory.swift; sourceTree = "<group>"; };
 		E070B5B1221C97DB00AD3623 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E0F74E7D221B676E00707338 /* SweetSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,7 +78,6 @@
 		E0F74EA8221B722000707338 /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
 		E0F74EAA221B724700707338 /* MapViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewCoordinator.swift; sourceTree = "<group>"; };
 		E0F74EAD221B74A600707338 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		E0F74EB5221B761700707338 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		E0F74EB8221B771D00707338 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
 		E9EAE17EC1B278399CB108FA /* Pods_SweetSpotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetSpotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,15 +122,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E0532651221CB04D0083E38D /* RootInjection */ = {
+		E0532651221CB04D0083E38D /* ApplicationRoot */ = {
 			isa = PBXGroup;
 			children = (
-				E053264F221CAC5B0083E38D /* RootViewController.swift */,
-				E0532653221CB06B0083E38D /* RootCoordinator.swift */,
-				E0532655221CB1740083E38D /* RootPresentableFactory.swift */,
-				E053265C221CC0050083E38D /* RootPresentable.swift */,
+				E0532653221CB06B0083E38D /* ApplicationCoordinator.swift */,
+				E053265C221CC0050083E38D /* ApplicationState.swift */,
+				E053266F221DED150083E38D /* ApplicationChildCoordinatorFactory.swift */,
 			);
-			path = RootInjection;
+			path = ApplicationRoot;
 			sourceTree = "<group>";
 		};
 		E053265E221CC0CB0083E38D /* UserSession */ = {
@@ -138,6 +141,15 @@
 				E0532665221CC2390083E38D /* UserSessionDataStore.swift */,
 			);
 			path = UserSession;
+			sourceTree = "<group>";
+		};
+		E053266A221DE7E80083E38D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E0532668221DE7730083E38D /* BasePresentableFactory.swift */,
+				E053266B221DE7F40083E38D /* Router.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		E0F74E74221B676E00707338 = {
@@ -199,8 +211,10 @@
 		E0F74EA5221B67B200707338 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E0F74E80221B676E00707338 /* AppDelegate.swift */,
+				E0F74E8C221B677000707338 /* LaunchScreen.storyboard */,
 				E053265E221CC0CB0083E38D /* UserSession */,
-				E0532651221CB04D0083E38D /* RootInjection */,
+				E0532651221CB04D0083E38D /* ApplicationRoot */,
 				E0F74EAC221B725200707338 /* Base */,
 				E0F74EA7221B71AB00707338 /* MapView */,
 			);
@@ -229,8 +243,7 @@
 		E0F74EAC221B725200707338 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				E0F74E8C221B677000707338 /* LaunchScreen.storyboard */,
-				E0F74E80221B676E00707338 /* AppDelegate.swift */,
+				E053266A221DE7E80083E38D /* Router */,
 				E0F74EB7221B770A00707338 /* Storyboardable */,
 				E0F74EB0221B74E200707338 /* Presentable */,
 				E0F74EAF221B74D300707338 /* Coordinator */,
@@ -242,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				E0F74EAD221B74A600707338 /* Coordinator.swift */,
+				E0532671221E0DCB0083E38D /* BaseCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -249,9 +263,9 @@
 		E0F74EB0221B74E200707338 /* Presentable */ = {
 			isa = PBXGroup;
 			children = (
-				E0F74EB5221B761700707338 /* Router.swift */,
 				E053264B221CAC070083E38D /* Presentable.swift */,
 				E053264D221CAC270083E38D /* Presenter.swift */,
+				E053266D221DE9BF0083E38D /* WindowProviding.swift */,
 			);
 			path = Presentable;
 			sourceTree = "<group>";
@@ -439,21 +453,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0532656221CB1740083E38D /* RootPresentableFactory.swift in Sources */,
+				E0532670221DED150083E38D /* ApplicationChildCoordinatorFactory.swift in Sources */,
 				E070B5B2221C97DB00AD3623 /* MapViewController.swift in Sources */,
-				E0F74EB6221B761700707338 /* Router.swift in Sources */,
-				E053265D221CC0050083E38D /* RootPresentable.swift in Sources */,
+				E053265D221CC0050083E38D /* ApplicationState.swift in Sources */,
 				E0532666221CC2390083E38D /* UserSessionDataStore.swift in Sources */,
+				E0532672221E0DCB0083E38D /* BaseCoordinator.swift in Sources */,
 				E053265B221CBEB20083E38D /* PersistanceContainer.swift in Sources */,
 				E0F74EAB221B724700707338 /* MapViewCoordinator.swift in Sources */,
-				E0532650221CAC5B0083E38D /* RootViewController.swift in Sources */,
 				E0F74EAE221B74A600707338 /* Coordinator.swift in Sources */,
 				E053264E221CAC270083E38D /* Presenter.swift in Sources */,
 				E0F74E81221B676E00707338 /* AppDelegate.swift in Sources */,
-				E0532654221CB06B0083E38D /* RootCoordinator.swift in Sources */,
+				E0532654221CB06B0083E38D /* ApplicationCoordinator.swift in Sources */,
 				E070B5B0221C964200AD3623 /* MapViewPresentableFactory.swift in Sources */,
+				E053266C221DE7F40083E38D /* Router.swift in Sources */,
 				E0F74E89221B676E00707338 /* SweetSpot.xcdatamodeld in Sources */,
 				E0532664221CC1B40083E38D /* RemoteUserSession.swift in Sources */,
+				E053266E221DE9BF0083E38D /* WindowProviding.swift in Sources */,
+				E0532669221DE7730083E38D /* BasePresentableFactory.swift in Sources */,
 				E0F74EB9221B771D00707338 /* Storyboardable.swift in Sources */,
 				E053264C221CAC070083E38D /* Presentable.swift in Sources */,
 				E0532660221CC0DC0083E38D /* UserSession.swift in Sources */,

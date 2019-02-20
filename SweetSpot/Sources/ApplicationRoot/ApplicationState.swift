@@ -8,22 +8,28 @@
 
 import Foundation
 
-enum RootPresentable {
+enum ApplicationState {
     case launching
     case onboarding
-    case signedIn(userSession: UserSession)
+    case signUp
+    case signedIn(userSession: UserSession?)
+    case signOut
 }
 
-extension RootPresentable: Equatable {
-    public static func ==(lhs: RootPresentable, rhs: RootPresentable) -> Bool {
+extension ApplicationState: Equatable {
+    public static func ==(lhs: ApplicationState, rhs: ApplicationState) -> Bool {
         switch(lhs, rhs) {
         case(.launching, .launching):
             return true
         case(.onboarding, .onboarding):
             return true
+        case(.signUp, .signUp):
+            return true
         case let (.signedIn(l), .signedIn(r)):
             return l == r
-        case(.launching, _), (.onboarding, _), (.signedIn, _):
+        case(.signOut, .signOut):
+            return true
+        case(.launching, _), (.onboarding, _), (.signedIn, _), (.signUp, _), (.signOut, _):
             return false
         }
     }

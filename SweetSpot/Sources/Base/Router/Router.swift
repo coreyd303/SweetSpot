@@ -2,7 +2,7 @@
 //  Router.swift
 //  SweetSpot
 //
-//  Created by Corey Davis on 2/18/19.
+//  Created by Corey Davis on 2/20/19.
 //  Copyright © 2019 SweetSpot. All rights reserved.
 //
 
@@ -10,13 +10,14 @@ import Foundation
 import UIKit
 
 protocol Router: Presentable {
+    var rootController: UINavigationController { get set }
     func push(_ presentable: Presentable)
     func pop()
     func setRootPresentable(_ presentable: Presentable)
 }
 
 class RouterImplementation: Router {
-    let rootController: UINavigationController
+    var rootController: UINavigationController
     
     init(rootController: UINavigationController) {
         self.rootController = rootController
