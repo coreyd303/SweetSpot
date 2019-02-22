@@ -15,6 +15,9 @@ protocol BasePresentableFactory: class {
 
 class BasePresentableFactoryImplementation: BasePresentableFactory {
     func makeRouter() -> Router {
-        return RouterImplementation(rootController: UINavigationController())
+        let navigationController = UINavigationController()
+        navigationController.navigationBar.barTintColor = Color.Flat.Green.marianas
+        navigationController.navigationBar.prefersLargeTitles = true
+        return RouterImplementation(rootController: navigationController)
     }
 }

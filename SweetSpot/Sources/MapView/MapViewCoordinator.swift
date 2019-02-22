@@ -36,7 +36,7 @@ class MapViewCoordinatorImplementation: MapViewCoordinator {
     // MARK: - Public
 
     func start() {
-        let mapViewPresentable = presentableFactory.makeMapViewPresentable()
+        guard let mapViewPresentable = presentableFactory.makeMapViewPresentable() else { return }
         router.setRootPresentable(mapViewPresentable)
     }
 }

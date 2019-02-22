@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		5A5047130BCE573669865C2E /* Pods_SweetSpotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9EAE17EC1B278399CB108FA /* Pods_SweetSpotTests.framework */; };
 		D7CD21490C4C03C468F17A29 /* Pods_SweetSpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67AE4142E20E561768B59CE /* Pods_SweetSpot.framework */; };
+		E01CDAA4221F332A00419D76 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01CDAA3221F332A00419D76 /* UIColor+extension.swift */; };
+		E01CDAA6221F366300419D76 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01CDAA5221F366300419D76 /* Color.swift */; };
+		E01CDAAC221F4C9F00419D76 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01CDAAB221F4C9F00419D76 /* MapViewModel.swift */; };
+		E01CDAAF221F515300419D76 /* UIViewController+AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01CDAAE221F515300419D76 /* UIViewController+AlertManager.swift */; };
+		E01CDAB2221F5A5C00419D76 /* Locatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01CDAB1221F5A5C00419D76 /* Locatable.swift */; };
+		E01CDAB4221F5AFE00419D76 /* UserLocatableProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01CDAB3221F5AFE00419D76 /* UserLocatableProvider.swift */; };
+		E01CDAB6221F5C2600419D76 /* LocatableProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01CDAB5221F5C2600419D76 /* LocatableProvider.swift */; };
+		E01CDAB8221F5D6400419D76 /* UserLocatableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01CDAB7221F5D6400419D76 /* UserLocatableService.swift */; };
+		E01CDABC221F5F9400419D76 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01CDABB221F5F9400419D76 /* Result.swift */; };
+		E01CDABE221F64E400419D76 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01CDABD221F64E400419D76 /* String+extension.swift */; };
+		E01CDAC0221F66D900419D76 /* UIApplication+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01CDABF221F66D900419D76 /* UIApplication+extension.swift */; };
 		E053264C221CAC070083E38D /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053264B221CAC070083E38D /* Presentable.swift */; };
 		E053264E221CAC270083E38D /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053264D221CAC270083E38D /* Presenter.swift */; };
 		E0532654221CB06B0083E38D /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0532653221CB06B0083E38D /* ApplicationCoordinator.swift */; };
@@ -51,6 +62,17 @@
 		6594D32E4A8BD2EE909B2A79 /* Pods-SweetSpot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetSpot.release.xcconfig"; path = "Target Support Files/Pods-SweetSpot/Pods-SweetSpot.release.xcconfig"; sourceTree = "<group>"; };
 		9EC11EA88B1EE4AAC912F748 /* Pods-SweetSpot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweetSpot.debug.xcconfig"; path = "Target Support Files/Pods-SweetSpot/Pods-SweetSpot.debug.xcconfig"; sourceTree = "<group>"; };
 		B67AE4142E20E561768B59CE /* Pods_SweetSpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweetSpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01CDAA3221F332A00419D76 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
+		E01CDAA5221F366300419D76 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		E01CDAAB221F4C9F00419D76 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		E01CDAAE221F515300419D76 /* UIViewController+AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AlertManager.swift"; sourceTree = "<group>"; };
+		E01CDAB1221F5A5C00419D76 /* Locatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locatable.swift; sourceTree = "<group>"; };
+		E01CDAB3221F5AFE00419D76 /* UserLocatableProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocatableProvider.swift; sourceTree = "<group>"; };
+		E01CDAB5221F5C2600419D76 /* LocatableProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocatableProvider.swift; sourceTree = "<group>"; };
+		E01CDAB7221F5D6400419D76 /* UserLocatableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocatableService.swift; sourceTree = "<group>"; };
+		E01CDABB221F5F9400419D76 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		E01CDABD221F64E400419D76 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		E01CDABF221F66D900419D76 /* UIApplication+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+extension.swift"; sourceTree = "<group>"; };
 		E053264B221CAC070083E38D /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		E053264D221CAC270083E38D /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		E0532653221CB06B0083E38D /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
@@ -120,6 +142,59 @@
 				E9EAE17EC1B278399CB108FA /* Pods_SweetSpotTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E01CDAA2221F331000419D76 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E01CDAA3221F332A00419D76 /* UIColor+extension.swift */,
+				E01CDAA5221F366300419D76 /* Color.swift */,
+				E01CDABD221F64E400419D76 /* String+extension.swift */,
+				E01CDABF221F66D900419D76 /* UIApplication+extension.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		E01CDAAA221F46E500419D76 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		E01CDAAD221F513200419D76 /* AppAlerts */ = {
+			isa = PBXGroup;
+			children = (
+				E01CDAAE221F515300419D76 /* UIViewController+AlertManager.swift */,
+			);
+			path = AppAlerts;
+			sourceTree = "<group>";
+		};
+		E01CDAB0221F5A4700419D76 /* Locatable */ = {
+			isa = PBXGroup;
+			children = (
+				E01CDAB9221F5D6900419D76 /* Service */,
+				E01CDAB1221F5A5C00419D76 /* Locatable.swift */,
+				E01CDAB3221F5AFE00419D76 /* UserLocatableProvider.swift */,
+				E01CDAB5221F5C2600419D76 /* LocatableProvider.swift */,
+			);
+			path = Locatable;
+			sourceTree = "<group>";
+		};
+		E01CDAB9221F5D6900419D76 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E01CDAB7221F5D6400419D76 /* UserLocatableService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E01CDABA221F5F8500419D76 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				E01CDABB221F5F9400419D76 /* Result.swift */,
+			);
+			path = Result;
 			sourceTree = "<group>";
 		};
 		E0532651221CB04D0083E38D /* ApplicationRoot */ = {
@@ -202,6 +277,7 @@
 		E0F74EA4221B67A900707338 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E01CDAA2221F331000419D76 /* Support */,
 				E0F74E8F221B677000707338 /* Info.plist */,
 				E0F74E8A221B677000707338 /* Assets.xcassets */,
 			);
@@ -211,6 +287,7 @@
 		E0F74EA5221B67B200707338 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E01CDAAD221F513200419D76 /* AppAlerts */,
 				E0F74E80221B676E00707338 /* AppDelegate.swift */,
 				E0F74E8C221B677000707338 /* LaunchScreen.storyboard */,
 				E053265E221CC0CB0083E38D /* UserSession */,
@@ -232,10 +309,12 @@
 		E0F74EA7221B71AB00707338 /* MapView */ = {
 			isa = PBXGroup;
 			children = (
+				E01CDAAA221F46E500419D76 /* Search */,
 				E0F74EA8221B722000707338 /* MapViewController.storyboard */,
 				E0F74EAA221B724700707338 /* MapViewCoordinator.swift */,
 				E070B5AF221C964200AD3623 /* MapViewPresentableFactory.swift */,
 				E070B5B1221C97DB00AD3623 /* MapViewController.swift */,
+				E01CDAAB221F4C9F00419D76 /* MapViewModel.swift */,
 			);
 			path = MapView;
 			sourceTree = "<group>";
@@ -243,6 +322,8 @@
 		E0F74EAC221B725200707338 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				E01CDABA221F5F8500419D76 /* Result */,
+				E01CDAB0221F5A4700419D76 /* Locatable */,
 				E053266A221DE7E80083E38D /* Router */,
 				E0F74EB7221B770A00707338 /* Storyboardable */,
 				E0F74EB0221B74E200707338 /* Presentable */,
@@ -457,23 +538,34 @@
 				E070B5B2221C97DB00AD3623 /* MapViewController.swift in Sources */,
 				E053265D221CC0050083E38D /* ApplicationState.swift in Sources */,
 				E0532666221CC2390083E38D /* UserSessionDataStore.swift in Sources */,
+				E01CDABE221F64E400419D76 /* String+extension.swift in Sources */,
 				E0532672221E0DCB0083E38D /* BaseCoordinator.swift in Sources */,
+				E01CDAA6221F366300419D76 /* Color.swift in Sources */,
+				E01CDABC221F5F9400419D76 /* Result.swift in Sources */,
+				E01CDAB4221F5AFE00419D76 /* UserLocatableProvider.swift in Sources */,
 				E053265B221CBEB20083E38D /* PersistanceContainer.swift in Sources */,
 				E0F74EAB221B724700707338 /* MapViewCoordinator.swift in Sources */,
 				E0F74EAE221B74A600707338 /* Coordinator.swift in Sources */,
+				E01CDAB2221F5A5C00419D76 /* Locatable.swift in Sources */,
 				E053264E221CAC270083E38D /* Presenter.swift in Sources */,
+				E01CDAA4221F332A00419D76 /* UIColor+extension.swift in Sources */,
 				E0F74E81221B676E00707338 /* AppDelegate.swift in Sources */,
 				E0532654221CB06B0083E38D /* ApplicationCoordinator.swift in Sources */,
 				E070B5B0221C964200AD3623 /* MapViewPresentableFactory.swift in Sources */,
+				E01CDAC0221F66D900419D76 /* UIApplication+extension.swift in Sources */,
 				E053266C221DE7F40083E38D /* Router.swift in Sources */,
 				E0F74E89221B676E00707338 /* SweetSpot.xcdatamodeld in Sources */,
 				E0532664221CC1B40083E38D /* RemoteUserSession.swift in Sources */,
+				E01CDAAF221F515300419D76 /* UIViewController+AlertManager.swift in Sources */,
 				E053266E221DE9BF0083E38D /* WindowProviding.swift in Sources */,
 				E0532669221DE7730083E38D /* BasePresentableFactory.swift in Sources */,
 				E0F74EB9221B771D00707338 /* Storyboardable.swift in Sources */,
 				E053264C221CAC070083E38D /* Presentable.swift in Sources */,
+				E01CDAB6221F5C2600419D76 /* LocatableProvider.swift in Sources */,
+				E01CDAB8221F5D6400419D76 /* UserLocatableService.swift in Sources */,
 				E0532660221CC0DC0083E38D /* UserSession.swift in Sources */,
 				E0532662221CC1780083E38D /* UserProfile.swift in Sources */,
+				E01CDAAC221F4C9F00419D76 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

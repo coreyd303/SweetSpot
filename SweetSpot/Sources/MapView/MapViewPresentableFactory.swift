@@ -8,14 +8,18 @@
 
 import Foundation
 // TODO: - remove this
-import UIKit
+//import UIKit
+import CoreLocation
 
 protocol MapViewPresentableFactory: class {
-    func makeMapViewPresentable() -> Presentable
+    func makeMapViewPresentable() -> Presentable?
 }
 
 class MapViewPresentableFactoryImplementation: MapViewPresentableFactory {
-    func makeMapViewPresentable() -> Presentable {
-        return MapViewController.storyboardViewController()
+    func makeMapViewPresentable() -> Presentable? {
+        let mapVC = MapViewController.storyboardViewController()
+        let provider = UserLocatableService(provider: CLLocationManager())
+        mapVC.viewModel = MapViewModelImplementation(locationProvider: provider)
+        return mapVC
     }
 }
