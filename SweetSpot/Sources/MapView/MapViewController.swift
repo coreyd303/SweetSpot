@@ -16,9 +16,9 @@ protocol MapViewPresentable: Presentable {
 
 class MapViewController: UIViewController, MapViewPresentable {
 
-    @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var filterButton: UIButton!
+    @IBOutlet weak var searchBar: UISearchBar?
+    @IBOutlet weak var mapView: MKMapView?
+    @IBOutlet weak var filterButton: UIButton?
 
     var viewModel: MapViewModel?
     var didTap: (() -> Void)?
@@ -38,10 +38,10 @@ class MapViewController: UIViewController, MapViewPresentable {
     // MARK: - Private
 
     private func applyDesign() {
-        searchBar.barTintColor = Color.Flat.Green.marianas
-        filterButton.backgroundColor = Color.Flat.Green.marianas
-        filterButton.titleLabel?.text = String.filterLocations
-        filterButton.tintColor = Color.Flat.Base.white
+        searchBar?.barTintColor = Color.Flat.Green.marianas
+        filterButton?.backgroundColor = Color.Flat.Green.marianas
+        filterButton?.titleLabel?.text = String.filterLocations
+        filterButton?.tintColor = Color.Flat.Base.white
         
         let b = UIBarButtonItem(title: "+", style: .plain, target: self, action: nil)
 
@@ -62,7 +62,7 @@ class MapViewController: UIViewController, MapViewPresentable {
     
     private func centerMap(on location: Locatable) {
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: viewModel?.regionRadius ?? 1000, longitudinalMeters: viewModel?.regionRadius ?? 1000)
-        mapView.setRegion(coordinateRegion, animated: true)
+        mapView?.setRegion(coordinateRegion, animated: true)
     }
     
     private func alertUserPermissions() {

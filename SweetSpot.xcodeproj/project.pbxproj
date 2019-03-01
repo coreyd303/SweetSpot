@@ -41,6 +41,18 @@
 		E0B2E0B92229A81400C07A1A /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B2E0B82229A81400C07A1A /* NetworkDispatcher.swift */; };
 		E0B2E0C02229AFAD00C07A1A /* MapViewCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B2E0BF2229AFAD00C07A1A /* MapViewCoordinatorTests.swift */; };
 		E0B2E0C72229B24800C07A1A /* MockRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B2E0C62229B24800C07A1A /* MockRouter.swift */; };
+		E0BADCFB2229B7B300F6D4E5 /* MockMapViewPresentableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BADCFA2229B7B300F6D4E5 /* MockMapViewPresentableFactory.swift */; };
+		E0BADCFD2229B81C00F6D4E5 /* StubPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BADCFC2229B81C00F6D4E5 /* StubPresentable.swift */; };
+		E0BADCFF2229BCD300F6D4E5 /* MockPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BADCFE2229BCD300F6D4E5 /* MockPresentable.swift */; };
+		E0BADD012229C13D00F6D4E5 /* MapViewPresentableFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BADD002229C13D00F6D4E5 /* MapViewPresentableFactoryTests.swift */; };
+		E0BADD032229C44600F6D4E5 /* MapViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BADD022229C44600F6D4E5 /* MapViewControllerTests.swift */; };
+		E0BADD052229C4CA00F6D4E5 /* MockMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BADD042229C4CA00F6D4E5 /* MockMapViewModel.swift */; };
+		E0BADD072229C4ED00F6D4E5 /* MockUserLocatableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BADD062229C4ED00F6D4E5 /* MockUserLocatableService.swift */; };
+		E0BADD092229C59E00F6D4E5 /* MockLocatableProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BADD082229C59E00F6D4E5 /* MockLocatableProvider.swift */; };
+		E0BADD0B2229E21800F6D4E5 /* MockLocatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BADD0A2229E21800F6D4E5 /* MockLocatable.swift */; };
+		E0BADD0D2229E54E00F6D4E5 /* MockMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BADD0C2229E54E00F6D4E5 /* MockMapView.swift */; };
+		E0BADD0F2229E74A00F6D4E5 /* StubMapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BADD0E2229E74A00F6D4E5 /* StubMapKit.swift */; };
+		E0BADD112229F21200F6D4E5 /* MapViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BADD102229F21200F6D4E5 /* MapViewModelTests.swift */; };
 		E0F74E81221B676E00707338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F74E80221B676E00707338 /* AppDelegate.swift */; };
 		E0F74E89221B676E00707338 /* SweetSpot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0F74E87221B676E00707338 /* SweetSpot.xcdatamodeld */; };
 		E0F74E8B221B677000707338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0F74E8A221B677000707338 /* Assets.xcassets */; };
@@ -100,6 +112,18 @@
 		E0B2E0BF2229AFAD00C07A1A /* MapViewCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewCoordinatorTests.swift; sourceTree = "<group>"; };
 		E0B2E0C12229B0FB00C07A1A /* SweetSpotTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SweetSpotTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		E0B2E0C62229B24800C07A1A /* MockRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRouter.swift; sourceTree = "<group>"; };
+		E0BADCFA2229B7B300F6D4E5 /* MockMapViewPresentableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMapViewPresentableFactory.swift; sourceTree = "<group>"; };
+		E0BADCFC2229B81C00F6D4E5 /* StubPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubPresentable.swift; sourceTree = "<group>"; };
+		E0BADCFE2229BCD300F6D4E5 /* MockPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPresentable.swift; sourceTree = "<group>"; };
+		E0BADD002229C13D00F6D4E5 /* MapViewPresentableFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewPresentableFactoryTests.swift; sourceTree = "<group>"; };
+		E0BADD022229C44600F6D4E5 /* MapViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerTests.swift; sourceTree = "<group>"; };
+		E0BADD042229C4CA00F6D4E5 /* MockMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMapViewModel.swift; sourceTree = "<group>"; };
+		E0BADD062229C4ED00F6D4E5 /* MockUserLocatableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserLocatableService.swift; sourceTree = "<group>"; };
+		E0BADD082229C59E00F6D4E5 /* MockLocatableProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocatableProvider.swift; sourceTree = "<group>"; };
+		E0BADD0A2229E21800F6D4E5 /* MockLocatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocatable.swift; sourceTree = "<group>"; };
+		E0BADD0C2229E54E00F6D4E5 /* MockMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMapView.swift; sourceTree = "<group>"; };
+		E0BADD0E2229E74A00F6D4E5 /* StubMapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubMapKit.swift; sourceTree = "<group>"; };
+		E0BADD102229F21200F6D4E5 /* MapViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModelTests.swift; sourceTree = "<group>"; };
 		E0F74E7D221B676E00707338 /* SweetSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F74E80221B676E00707338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F74E88221B676E00707338 /* SweetSpot.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SweetSpot.xcdatamodel; sourceTree = "<group>"; };
@@ -276,6 +300,9 @@
 			isa = PBXGroup;
 			children = (
 				E0B2E0BF2229AFAD00C07A1A /* MapViewCoordinatorTests.swift */,
+				E0BADD002229C13D00F6D4E5 /* MapViewPresentableFactoryTests.swift */,
+				E0BADD022229C44600F6D4E5 /* MapViewControllerTests.swift */,
+				E0BADD102229F21200F6D4E5 /* MapViewModelTests.swift */,
 			);
 			path = MapView;
 			sourceTree = "<group>";
@@ -292,6 +319,8 @@
 		E0B2E0C32229B21E00C07A1A /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
+				E0BADCFC2229B81C00F6D4E5 /* StubPresentable.swift */,
+				E0BADD0E2229E74A00F6D4E5 /* StubMapKit.swift */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -299,6 +328,8 @@
 		E0B2E0C42229B22C00C07A1A /* MapView */ = {
 			isa = PBXGroup;
 			children = (
+				E0BADCFA2229B7B300F6D4E5 /* MockMapViewPresentableFactory.swift */,
+				E0BADD042229C4CA00F6D4E5 /* MockMapViewModel.swift */,
 			);
 			path = MapView;
 			sourceTree = "<group>";
@@ -307,6 +338,11 @@
 			isa = PBXGroup;
 			children = (
 				E0B2E0C62229B24800C07A1A /* MockRouter.swift */,
+				E0BADCFE2229BCD300F6D4E5 /* MockPresentable.swift */,
+				E0BADD062229C4ED00F6D4E5 /* MockUserLocatableService.swift */,
+				E0BADD082229C59E00F6D4E5 /* MockLocatableProvider.swift */,
+				E0BADD0A2229E21800F6D4E5 /* MockLocatable.swift */,
+				E0BADD0C2229E54E00F6D4E5 /* MockMapView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -666,8 +702,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0BADD092229C59E00F6D4E5 /* MockLocatableProvider.swift in Sources */,
+				E0BADD032229C44600F6D4E5 /* MapViewControllerTests.swift in Sources */,
 				E0B2E0C72229B24800C07A1A /* MockRouter.swift in Sources */,
+				E0BADCFB2229B7B300F6D4E5 /* MockMapViewPresentableFactory.swift in Sources */,
+				E0BADD012229C13D00F6D4E5 /* MapViewPresentableFactoryTests.swift in Sources */,
 				E0B2E0C02229AFAD00C07A1A /* MapViewCoordinatorTests.swift in Sources */,
+				E0BADD072229C4ED00F6D4E5 /* MockUserLocatableService.swift in Sources */,
+				E0BADD0D2229E54E00F6D4E5 /* MockMapView.swift in Sources */,
+				E0BADD052229C4CA00F6D4E5 /* MockMapViewModel.swift in Sources */,
+				E0BADD112229F21200F6D4E5 /* MapViewModelTests.swift in Sources */,
+				E0BADCFD2229B81C00F6D4E5 /* StubPresentable.swift in Sources */,
+				E0BADCFF2229BCD300F6D4E5 /* MockPresentable.swift in Sources */,
+				E0BADD0B2229E21800F6D4E5 /* MockLocatable.swift in Sources */,
+				E0BADD0F2229E74A00F6D4E5 /* StubMapKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

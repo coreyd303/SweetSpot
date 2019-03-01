@@ -7,8 +7,6 @@
 //
 
 import Foundation
-// TODO: - remove this
-//import UIKit
 import CoreLocation
 
 protocol MapViewPresentableFactory: class {
