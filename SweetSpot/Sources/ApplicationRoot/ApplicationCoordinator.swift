@@ -65,9 +65,6 @@ class ApplicationCoordinatorImplementation: BaseCoordinator, ApplicationCoordina
         case .signOut:
             return
         }
-        // TODO: - what knows about the state?
-        
-        
     }
     
 //    func transitionWith<T: Coordinator>(_ coordinator: T) {

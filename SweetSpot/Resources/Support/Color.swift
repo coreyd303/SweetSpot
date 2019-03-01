@@ -21,5 +21,10 @@ struct Color {
             static let darkWash = UIColor(netHex: 0xABA8A8)
             static let gunMetal = UIColor(netHex: 0x2D2829)
         }
+
+        struct Base {
+            static let black = UIColor.black
+            static let white = UIColor.white
+        }
     }
 }

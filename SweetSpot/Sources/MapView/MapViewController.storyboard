@@ -24,33 +24,33 @@
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kfT-02-TYa">
                                         <rect key="frame" x="0.0" y="56" width="414" height="806"/>
                                     </mapView>
-                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="leT-qf-I2a">
+                                    <searchBar contentMode="redraw" placeholder="Search Locations" translatesAutoresizingMaskIntoConstraints="NO" id="leT-qf-I2a">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgC-Gw-NeZ">
-                                        <rect key="frame" x="342" y="790" width="50" height="50"/>
-                                        <color key="backgroundColor" red="0.23137254900000001" green="0.33725490200000002" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TG4-Wl-bgu">
+                                        <rect key="frame" x="103.66666666666669" y="802" width="207" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Idc-6m-Y8Q"/>
-                                            <constraint firstAttribute="width" constant="50" id="QhS-S8-9nU"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="YEO-i4-mIs"/>
+                                            <constraint firstAttribute="height" constant="30" id="2jI-ia-CWI"/>
                                         </constraints>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button" image="filter"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="didTapFilterButton:" destination="OOb-h7-eUF" eventType="touchUpInside" id="XCJ-5D-XUK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="OgC-Gw-NeZ" secondAttribute="bottom" constant="22" id="1Zg-h9-YyW"/>
                                     <constraint firstAttribute="trailing" secondItem="kfT-02-TYa" secondAttribute="trailing" id="349-eI-7tR"/>
+                                    <constraint firstItem="TG4-Wl-bgu" firstAttribute="centerX" secondItem="8W0-S0-gJg" secondAttribute="centerX" id="56K-sK-xl9"/>
                                     <constraint firstAttribute="bottom" secondItem="kfT-02-TYa" secondAttribute="bottom" id="FUK-5V-nyv"/>
+                                    <constraint firstItem="TG4-Wl-bgu" firstAttribute="width" secondItem="8W0-S0-gJg" secondAttribute="width" multiplier="0.5" id="Gzs-8d-YUr"/>
                                     <constraint firstAttribute="trailing" secondItem="leT-qf-I2a" secondAttribute="trailing" id="NSW-jd-o4q"/>
                                     <constraint firstItem="kfT-02-TYa" firstAttribute="leading" secondItem="8W0-S0-gJg" secondAttribute="leading" id="OPB-md-ixY"/>
                                     <constraint firstItem="kfT-02-TYa" firstAttribute="top" secondItem="leT-qf-I2a" secondAttribute="bottom" id="dnq-Wy-eRX"/>
                                     <constraint firstItem="leT-qf-I2a" firstAttribute="leading" secondItem="8W0-S0-gJg" secondAttribute="leading" id="j33-9u-24y"/>
                                     <constraint firstItem="leT-qf-I2a" firstAttribute="top" secondItem="8W0-S0-gJg" secondAttribute="top" id="qcm-I1-GGF"/>
-                                    <constraint firstAttribute="trailing" secondItem="OgC-Gw-NeZ" secondAttribute="trailing" constant="22" id="wmY-Id-guO"/>
+                                    <constraint firstAttribute="bottom" secondItem="TG4-Wl-bgu" secondAttribute="bottom" constant="30" id="raF-Rs-QBr"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -66,6 +66,7 @@
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="ngm-ZM-5x6"/>
                     <connections>
+                        <outlet property="filterButton" destination="TG4-Wl-bgu" id="xRK-yf-0g2"/>
                         <outlet property="mapView" destination="kfT-02-TYa" id="Vyk-W8-q65"/>
                         <outlet property="searchBar" destination="leT-qf-I2a" id="sva-6y-luC"/>
                     </connections>
@@ -75,7 +76,4 @@
             <point key="canvasLocation" x="1082.608695652174" y="16.071428571428569"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="filter" width="512" height="512"/>
-    </resources>
 </document>

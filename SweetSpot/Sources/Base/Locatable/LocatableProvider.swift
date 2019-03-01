@@ -12,6 +12,7 @@ import CoreLocation
 protocol LocatableProvider {
     var isEnabled: Bool { get }
     var isUserAuthorized: Bool { get }
+    var delegate: CLLocationManagerDelegate? { get set }
     func requestWhenInUseAuthorization()
     func requestLocation()
     func startUpdatingLocation()

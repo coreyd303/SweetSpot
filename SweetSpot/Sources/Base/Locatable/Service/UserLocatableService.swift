@@ -23,6 +23,7 @@ class UserLocatableService: NSObject, UserLocatableProvider {
 
     func findUserLocation(then: @escaping UserLocatableCompletionBlock) {
         locatableCompletionBlock = then
+        provider.delegate = self
         if provider.isUserAuthorized {
             provider.requestLocation()
         } else {
@@ -54,5 +55,9 @@ extension UserLocatableService: CLLocationManagerDelegate {
         } else {
             locatableCompletionBlock?(.failure(UserLocatableError.cannotFindLocation))
         }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("error: \(error)")
     }
 }

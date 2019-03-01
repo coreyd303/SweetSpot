@@ -11,50 +11,53 @@ import UIKit
 import MapKit
 
 protocol MapViewPresentable: Presentable {
+    var didTap: (() -> Void)? { get set }
 }
 
 class MapViewController: UIViewController, MapViewPresentable {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var mapView: MKMapView!
-    
+    @IBOutlet weak var filterButton: UIButton!
+
     var viewModel: MapViewModel?
+    var didTap: (() -> Void)?
 
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
-        layoutView()
+        applyDesign()
         setupLocation()
     }
-    
+
+    // MARK: - IB Action
+    @IBAction func didTapFilterButton(_ sender: Any) {
+        didTap?()
+    }
+
     // MARK: - Private
 
-    private func layoutView() {
+    private func applyDesign() {
         searchBar.barTintColor = Color.Flat.Green.marianas
+        filterButton.backgroundColor = Color.Flat.Green.marianas
+        filterButton.titleLabel?.text = String.filterLocations
+        filterButton.tintColor = Color.Flat.Base.white
+        
+        let b = UIBarButtonItem(title: "+", style: .plain, target: self, action: nil)
+
+        self.navigationController?.navigationItem.leftBarButtonItem = b
+        self.navigationController?.navigationItem.title = "TITLE"
     }
     
     private func setupLocation() {
-//        viewModel?.verifyPermissions { [weak self] result in
-//            switch result {
-//            case .success(let value):
-//                if value == true {
-                    viewModel?.requestLocationUpdates()
-                    viewModel?.requestLocation { [weak self] result in
-                        switch result {
-                        case .success(let location):
-                            self?.centerMap(on: location)
-                        case .failure(_):
-                            let userAlert = UserAlert(title: String.locationCouldNotBeFoundAlertTitle, msg: String.locationCouldNotBeFoundAlertMsg, actions: nil, style: .alert, completion: nil)
-                            self?.display(alert: userAlert)
-                        }
-                    }
-//                } else {
-//                    self?.alertUserPermissions()
-//                }
-//            case .failure(_):
-//                self?.alertUserPermissions()
-//            }
-//        }
+        viewModel?.requestLocation { [weak self] result in
+            switch result {
+            case .success(let location):
+                self?.centerMap(on: location)
+            case .failure(_):
+                self?.alertUserPermissions()
+            }
+        }
     }
     
     private func centerMap(on location: Locatable) {
